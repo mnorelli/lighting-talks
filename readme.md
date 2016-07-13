@@ -80,36 +80,31 @@ can focus on primary business, not hosting
 
 ####RESOURCES
 
-Basic docs
-[https://aws.amazon.com/s3](https://aws.amazon.com/s3)
+Basic docs [https://aws.amazon.com/s3](https://aws.amazon.com/s3)
 
-https://cloud.google.com/
-https://azure.microsoft.com/en-us/services/storage/
-http://www.cloudberrylab.com/blog/amazon-s3-azure-and-google-cloud-prices-compare/
+Google Cloud [https://cloud.google.com/](https://cloud.google.com/)
 
-Calculate estimated storage costs for your data set with
+Microsoft Azure [https://azure.microsoft.com/en-us/services/storage/](https://azure.microsoft.com/en-us/services/storage/)
 
-AWS Simple Monthly Calculator
+Good blog post on price compairson [http://www.cloudberrylab.com/blog/amazon-s3-azure-and-google-cloud-prices-compare/](http://www.cloudberrylab.com/blog/amazon-s3-azure-and-google-cloud-prices-compare/)
 
-Azure Pricing Calculator
+Calculate estimated storage costs for your data set with price calculators.  See above.
 
-Google Cloud Platform Pricing Calculator
 
-Using it
+####Using it
 
-Hosting a Static Website on Amazon S3
-http://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
+[Hosting a Static Website on Amazon S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html)
 
-http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html
+[General web hosting info on S3](http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
 
 Set up
+
 - choose location
 - make a bucket
 - store
 - get prior versions
 
-My stuff
-https://console.aws.amazon.com/console/home
+[Log in to Console](https://console.aws.amazon.com/console/home)
 
 - register domains
 - set up two buckets - your domain.com, www.yourdomain.com
@@ -118,7 +113,9 @@ https://console.aws.amazon.com/console/home
     - create hosted zone
     - create  two A records (NS and SOA already given), one for root, one for www...
 
-Interface (use SDKs)
+####Interface (use SDKs)
+
 For browser JS, Node JS, Ruby, etc.
-http://aws.amazon.com/code
+[http://aws.amazon.com/code](http://aws.amazon.com/code)
+
 `bower install aws-sdk-js`
