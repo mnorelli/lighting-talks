@@ -1,5 +1,7 @@
 ##AMAZON S3
 
+[Link to Keynote presentation](Amazons3presentation.key)
+
 Data storage, your online drive letter
 
 Different solution needed for running a virtual machine with an application and controllers
@@ -32,10 +34,11 @@ Your own personal Dropbox or Evernote for business
 pay only for storage, not setup or minimum
 
 levels by frequency of access
+
 - Standard
 - Standard - IA = infrequent
 - Glacier = low-cost, long-term archive
-- 
+
 migrates automatically
 
 there are charges and different latency times for accessing these
@@ -48,13 +51,10 @@ AWS Free Tier includes 5GB storage, 20,000 Get Requests, and 2,000 Put Requests 
 
 ###Transferring data
 
-direct
-
-stream
-
-ship physical drive
-
-transfer acceleration
+- direct
+- stream
+- ship physical drive
+- transfer acceleration
 
 ####Used by
 
@@ -89,6 +89,8 @@ Microsoft Azure [https://azure.microsoft.com/en-us/services/storage/](https://az
 Good blog post on price compairson [http://www.cloudberrylab.com/blog/amazon-s3-azure-and-google-cloud-prices-compare/](http://www.cloudberrylab.com/blog/amazon-s3-azure-and-google-cloud-prices-compare/)
 
 Calculate estimated storage costs for your data set with price calculators.  See above.
+
+#####[PDF of resources slide from Keynote](AmazonS3resources.pdf)
 
 
 ####Using it
