@@ -1,75 +1,124 @@
-#Lightning Talks
+##AMAZON S3
 
-Generally, when learning a new technology, it is important to maximize usefulness will minimizing difficulty. Consider making a sorted "hit-list" with these to factors in mind.
+Data storage, your online drive letter
 
-Your goal is to create a 10 minute presentation on a topic that is useful to your fellow developers. Please create a brief readme on Github outlining your findings during your research. It should address the following:
+Different solution needed for running a virtual machine with an application and controllers
 
-- What problem does this technology solve?
-- How do you use it? Is there a "cheatsheet" you found or made that others can reference?
-- What did you build? (demo)
+This is what your application would use for back-end storage
 
->It is advised to pick something that will be relevant to project 4 if you have a clear idea of something you want to build that is out of the scope of material we learned.
+####Video  
+Introduction to S3 [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
 
-##Topics:
-Here are some suggestions or add your own!
+####Why
 
-**Languages**
+Instead of buying racks, backup, hiring staff, doing security
 
-- [ ] ES6
-- [ ] Python
-- [ ] Clojure
-- [ ] Go
-- [ ] Swift
-- [ ] C++
-- [ ] Scala
-- [ ] Elixir
-- [ ] Java
+####What is it
 
-**Client-side Frameworks**
+Cloud storage
 
-- [ ] Ionic
-- [ ] Meteor
-- [ ] Ember
-- [ ] Backbone
+"Simple Storage Service"
 
-**Server-side Frameworks**
+secure, durable, scalable
 
-- [ ] Hapi.js
-- [ ] Phoenix
+web interface to store and retrieve
 
-**UI Elements and Tools**
+for backups and static files
 
-- [ ] Canvas API
-- [ ] WebRTC
-- [ ] Phaser
-- [ ] Three.js
-- [ ] A-Frame
-- [ ] D3.js
-- [ ] Polymer / Web components
-- [ ] Processing (P5.js)
+Your own personal Dropbox or Evernote for business
 
-**Data Storage**
+####Details
 
-- [ ] Redis
-- [ ] Amazon S3
-- [ ] CouchDB
-- [ ] RethinkDB
+pay only for storage, not setup or minimum
 
-**Workflow Tools**
+levels by frequency of access
+- Standard
+- Standard - IA = infrequent
+- Glacier = low-cost, long-term archive
+- 
+migrates automatically
 
-- [ ] Docker
+there are charges and different latency times for accessing these
 
-**Templating**
+by itself or with EC2 or with data migration services
 
-- [ ] HAML
-- [ ] Jade
+encryption of data and for access
 
-**Other**
+AWS Free Tier includes 5GB storage, 20,000 Get Requests, and 2,000 Put Requests with Amazon S3
 
-- [ ] X-Code
-- [ ] PGP
-- [ ] Torrents
-- [ ] Distributed Applications
-- [ ] Microcontrollers
-- [ ] Internet of Things
-- [ ] etc... (suggest a topic of your own & have it approved)
+###Transferring data
+
+direct
+
+stream
+
+ship physical drive
+
+transfer acceleration
+
+####Used by
+
+- Netflix
+- AirBnb
+- SmugMug
+- NASDAQ
+
+#####Netflix
+makes instances
+
+hosts microservices
+
+org can move to DevOps as data moves to cloud
+
+- test and experiments on new services or instances
+- instead of negotiating with IT for servers
+
+####AirBnb
+can focus on primary business, not hosting
+
+#####Compares with Google Cloud Storage and Microsoft Azure
+
+####RESOURCES
+
+Basic docs
+[https://aws.amazon.com/s3](https://aws.amazon.com/s3)
+
+https://cloud.google.com/
+https://azure.microsoft.com/en-us/services/storage/
+http://www.cloudberrylab.com/blog/amazon-s3-azure-and-google-cloud-prices-compare/
+
+Calculate estimated storage costs for your data set with
+
+AWS Simple Monthly Calculator
+
+Azure Pricing Calculator
+
+Google Cloud Platform Pricing Calculator
+
+Using it
+
+Hosting a Static Website on Amazon S3
+http://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
+
+http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html
+
+Set up
+- choose location
+- make a bucket
+- store
+- get prior versions
+
+My stuff
+https://console.aws.amazon.com/console/home
+
+- register domains
+- set up two buckets - your domain.com, www.yourdomain.com
+- upload website files, make public, and configure www... to go to root site.
+- Route 53
+    - create hosted zone
+    - create  two A records (NS and SOA already given), one for root, one for www...
+
+Interface (use SDKs)
+For browser JS, Node JS, Ruby, etc.
+http://aws.amazon.com/code
+`bower install aws-sdk-js`
